@@ -6,24 +6,24 @@ ltraceResult is the process record of ltrace
 ```
 ltrace -o ltraceResult wget http://adl.tw
 ```
-
+<br>
 build cheat library
 ```
 make
 ```
-
+<br>
 clean object
 ```
 make clean
 ```
-
+<br>
 test the cheat library
 ```
 make test
 ```
-
+<br>
 each function hijack result will save as a file named info_output
-
+<br><br>
 #####sample output:
 ```
 ==========
