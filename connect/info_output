@@ -1,6 +1,0 @@
-==========
-I am in connect function
-int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen)
-
-ip address: 140.115.53.5
-==========
