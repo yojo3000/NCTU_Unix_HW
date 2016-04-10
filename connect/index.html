@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Defense Lab</title>
+    <link href="image/adl.ico" rel="SHORTCUT ICON">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/season.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container animated fadeInUp">
+    <div id="maindiv">
+        <div id="middle">
+            <img id="mainimg" src="image/adl.png">
+        </div>
+        <div id="title">
+            <h1>Advanced Defense Lab</h1>
+            <HR>
+            <h3>先進防禦實驗室</h3>
+            <br>
+        </div>
+        <div id="enter">
+            <button type="button" class="btn btn-lg btn-outline" onclick="Hide()">Enter</button>
+        </div>
+    </div>
+</div>
+<nav id="bar" class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="container-fluid">
+
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <img class="navbar-brand" id="PicofNavbar" src="image/adl.png">
+
+                <a class="navbar-brand" id="name" href="#">Advanced Defense Lab</a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav">
+
+
+                    <li><a onclick=showContent("#Home") href="#Home">Home</a></li>
+                    <li><a onclick=showContent("#About") href="#About">About ADL</a>
+                    <li>
+                    <li><a onclick=showContent("#Faculty") href="#Faculty">Faculty</a></li>
+                    <li><a onclick=showContent("#Publication") href="#Publication">Publication</a></li>
+                    <li><a onclick=showPage("#Presentation") href="#Presentation">Presentation</a></li>
+                    <li><a onclick=showPage("#Alumni") href="#Alumni">Alumni</a></li>
+                    <li><a onclick=showPage("#Students") href="#Student">Students</a></li>
+                    <li><a href="http://adl.csie.ncu.edu.tw/photo/">Album</a></li>
+                    <li><a href="http://adl.csie.ncu.edu.tw/wiki/">Wiki</a></li>
+                    <li><a onclick=showContent("#LTG") href="#LTG">Lab Tour Guide</a></li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="page" id="Home">
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+            <h2>Congratulations</h2>
+
+            <p>
+                <span style="color:red">賀！ADL 楊安傑同學參與 HITCON 團隊獲全球最大駭客競賽第四名！</span><br>
+                <span style="color:red">賀！ADL 陳立函同學順利通過博士班口試取得博士學位！</span><br>
+                ADL參加 <a href="https://security.cisanet.org.tw/news_in.aspx?sno=41">104 年資安金盾獎</a> 「bamboofox_DozenCloud」（李樸、黃宇強、王本奕）勇奪第三名佳績！<br>
+                ADL參加 <a href="http://www.ithome.com.tw/news/93069">第一屆 芬安全「獵駭行動」</a> 「admin'--」（蔡維泰、楊安傑）勇奪第一名！<br>
+                ADL參加 <a href="http://security.cisanet.org.tw">第九屆資安金盾奬</a> 「Kernel
+                Panic!!!!!!」（陳立函、左昌國、江瑞敏）勇奪潛力無窮獎！<br>
+                ADL <b>張嘉顯</b> 同學參加 <a href="http://www.bnext.com.tw/article/view/id/31766">IBM首屆世界盃大型主機競賽</a>
+                代表臺灣進入世界決賽，勇奪全球第二十八名佳績！<br>
+                ADL參加 <a href="http://security.cisanet.org.tw/nees/">第七屆資安金盾奬</a> 「123 木頭人」（歐巡禮、曾毓傑、李嘉恆）勇奪第二名佳績！<br>
+                ADL參加 <a href="http://security.cisanet.org.tw/news/">第五屆資安金盾獎</a> 「PyADL」（張凱翔、張 至、張 竟）勇奪第三名佳績！<br>
+                ADL參加 <a href="http://security.cisanet.org.tw/news/">第五屆資安金盾獎</a> 「Kernel
+                Panic!!!!!」（許齊顯、陳立函、左昌國）勇奪光芒畢露獎！ <br>
+                ADL參加 <a href="http://security.cisanet.org.tw/news/">第五屆資安金盾獎</a> 「why so serious?」（王傳陞、陳介文、徐裕量）勇奪潛力無窮獎！<br>
+                ADL參加 <a href="http://security.cisanet.org.tw/news/">九十七年度國科會</a> 自由軟體暨嵌入式系統計畫榮獲績優團隊獎！ <br>
+                ADL參加 <a href="http://www.trend.org/fd/tabid/112/Default.aspx">趨勢科技騰雲駕霧比賽</a>
+                「★男神★★加菲★」（李家豪、李佩瑄、陳介文、游宗樺）勇奪決賽入圍獎！<br>
+                ADL參加 <a href="http://security.cisanet.org.tw/news_detail.asp?id=21">第四屆資安金盾獎</a> 「Kernel
+                Panic!!!!」（許齊顯、陳立函、左昌國）勇奪第三名佳績！ <br>
+                ADL參加 <a href="http://security.cisanet.org.tw/news_detail.asp?id=21">第四屆資安金盾獎</a> 「why so
+                serious?」（顏志豪、王傳陞、黃浩倫）勇奪潛力無窮獎！ <br>
+                ADL參加 <a href="http://www.trend.org/fd/tabid/112/Default.aspx">趨勢科技騰雲駕霧比賽</a>
+                「Copy'n'Paste」〔洪健惟、張凱翔、徐培霖、蔡旻嶧〕勇奪第六名佳績！及特別獎！ <br>
+                ADL參加 <a href="http://security.cisanet.org.tw/">第三屆資安金盾獎</a> 勇奪第三名佳績！恭喜 QQ！黃政憲、林佳潤、葉怡群。<br>
+                ADL參加第二屆資安金盾獎 勇奪第四名佳績！恭喜Kernel Panic！張繼軒、陳立函、許齊顯。 <br>
+            </p>
+            <h2>Research Areas</h2>
+            <p>
+                Research at ADL focuses on Networking and System Security. We try to solve the following problems from
+                the point of view of Operatin Systems<br>
+                e.g. Linux and Windows, or System Programs, e.g. compilers and libraries, or Network Protocols.<br>
+            <ul>
+                <li>Buffer Overflow Attacks, Return-into-libc Attacks, and Format String Attacks.</li>
+                <li>Web Page Defacement</li>
+                <li>Click Fraud</li>
+                <li>SQL Injection and XSS</li>
+                <li>Worms</li>
+                <li>DoS/DDoS Attacks</li>
+                <li>IP Spoofing</li>
+                <li>TCP Session Hijacking</li>
+                <li>DNS Attacks</li>
+                <li>Malware (e.g. Rootkit, backdoors, spyware, ... and so on.)</li>
+                <li>Attack Redirection</li>
+                <li>OS Fingerprinting and Port Scanning.</li>
+                <li>Wireless Network Security</li>
+                <li>Cellular Phone Malware</li>
+                <li>Botnet</li>
+                <li>Virus</li>
+                <li>... and so on.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="page" id="About">
+    <div class="container">
+        <div class="col-md-12">
+            <h1>About ADL</h1>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <img src="image/lab-poster.jpg">
+        </div>
+        <div class="col-md-6">
+            <h2>Founding Date</h2>
+            <p>August 2005</p>
+            <h2>Location</h2>
+            <p>
+                Room A303-1<br>
+                Engineering Building 5<br>
+                Computer Science and Information Engineering Department<br>
+                National Central University, Taoyuan County, Taiwan, R.O.C.<br></p>
+            <h2>Phone Number</h2>
+            <p>+886-3-4227151 ext 35321 </p>
+        </div>
+    </div>
+</div>
+<div class="page" id="Faculty">
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Faculty</h1>
+        </div>
+
+        <div id="facultyinfo" class="col-md-12 StuPic">
+
+            <div class="col-md-4 col-md-offset-2">
+                <img id="TeacherPic" src="image/Hsufh-head.jpg">
+            </div>
+            <div class="col-md-6">
+                <h3>Dr.<a href="http://www.csie.ncu.edu.tw/~hsufh/"> 許富皓 (Fu-Hau Hsu)</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Publication" class="page">
+    <div class="container">
+        <h1>Pubication</h1>
+        <ul>
+  <!-----------------------------------------------------------------------------> 
+  <!-----------------------------------------------------------------------------> 
+  <li><h3><b><font color="red">SCI</font> Journal</b></h3> 
+   <ol>
+    <li><b>Fu-Hau Hsu</b>, Min-Hao Wu, Syun-Cheng Ou, Shiuh-Jeng Wang*, 
+        ``<a href="http://link.springer.com/article/10.1007%2Fs11227-015-1492-y">Data Concealments with High Privacy in
+        New Technology File System</a>,''
+        <i>Journal of Supercomputing</i>, accepted and to be published.
+    <li><b>Fu-Hau Hsu</b>, Chuan-Sheng Wang*, Yu-Liang Hsu, Yung-Pin Cheng, 
+        Yu-Hsiang Hsueh, ``<a href="http://authors.elsevier.com/TrackPaper.html?trk_article=CAEE1774&trk_surname=Wang">A Client-side Detection Mechanism 
+        for Evil Twins</a>,'' <i>Computers & Electrical Engineering</i>, accepted and to be published.
+    <li><b>Fu-Hau Hsu</b>, Chi-Hsien Hsu*, Chuan-Sheng Wang, Pei-Hsun Lee, Ruei-Min Jiang, 
+        and Jia-Sian Jhang, 
+        ``<a href="http://www.iis.sinica.edu.tw/page/jise/2015/201505_18.pdf">Bypass
+        Cell-phone-verification through a Smartphone-based Botnet</a>,''
+        <i>Journal of Information Science and Engineering</i>, Vol. 31, No. 3,  pp. 1097-1111, May 2015.
+        <ul>
+          <li>NSC 101-2221-E-008-028-MY2, NSC 100-2218-E-008-013-MY3
+        </ul>
+    <li><b>Fu-Hau Hsu</b>, Min-Hao Wu, Yi-Wen Chang, and Shiuh-Jeng Wang*, 
+        ``<a href="http://link.springer.com/article/10.1007%2Fs11042-014-2003-5">Web Security in a 
+        Windows System As Privacy Defender in Private Browsing Mode</a>,''
+        <i>Multimedia Tools and Applications</i>, Volume 74, Issue 5, pp. 1667-1688, March 2015.
+        <ul>
+          <li>NSC 101-2221-E-008-028-MY2
+        </ul> 
+    <li><b>Fu-Hau Hsu</b>, Li-Han Chen*, and Chia-Jun Lin,
+        ``<a href="http://onlinelibrary.wiley.com/doi/10.1002/sec.1019/abstract">Defeat Scanning
+        Worms in Cyber Warfare</a>,'' 
+        <i>Security and Communication Networks</i>, Volume 8, Issue 5, pp. 715–726, 25 March 2015.
+        <ul>
+          <li>NSC 100-2218-E-008-013-MY3, NSC 101-2221-E-008-028-MY2, NSC 103-2623-E-008-003-D
+        </ul>
+    <li><b>Fu-Hau Hsu</b>, Min-Hao Wu, Cheng-Hsing Yang, and Shiuh-Jeng Wang*,
+        ``<a href="http://link.springer.com/article/10.1007%2Fs12083-013-0212-8">Image reversibility in data
+          embedding on the basis of blocking-predictions</a>,''
+        <i>Peer-to-Peer Networking and Applications</i>, Volume 7, Issue 4, pp. 723-736, December 2014.
+        <ul>
+          <li>IF: 0.632 [2014] 
+          <li>NSC 101-2221-E-008-028-MY2
+        </ul>
+    <li><b>Fu-Hau Hsu</b>, Chuan-Sheng Wang*, Chi-Hsien Hsu, Chang-Kuo Tso, Li-Han Chen, and Song-Hui Lin,
+        ''<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6905768">Detect
+        Fast-Flux Domains through Response Time Differences</a>,'' 
+        <i>IEEE Journal on Selected Areas in Communications</i>, Volume 32, Issue 10, pp. 1947-1956, 
+           OCTOBER 2014.
+        <ul>
+          <li>DOI: 10.1109/JSAC.2014.2358814
+          <li>IF: 3.453 [2014] 
+          <li>NSC 101-2221-E-008-028-MY2, NSC 103-2623-E-008-003-D, NSC 100-2218-E-008-013-MY3
+        </ul>
+    <li><b>Fu-Hau Hsu</b>, Min-Hao Wu, Cheng-Hsing Yang, Shiuh-Jeng Wang*, 
+        ``<a href="http://link.springer.com/article/10.1007%2Fs11227-014-1258-y">Visible
+        watermarking with reversibility of multimedia images for ownership declarations</a>,''
+        <i>Journal of Supercomputing</i>, Volume 70, Issue 1, pp. 247-268, October 2014.
+        <ul>
+          <li>IF: 0.858 [2014] 
+          <li>NSC 101-2221-E-008-028-MY2, NSC 100-2218-E-008-013-MY3
+        </ul> 
+    <li><b>Fu-Hau Hsu</b>, Min-Hao Wu, and Shiuh-Jeng Wang*, 
+        ``<a href="http://link.springer.com/article/10.1007%2Fs11042-012-1047-7#">Reversible
+        Data Hiding Using Side-match  Predictions 
+        on Steganographic Images</a>,'' <i>Multimedia Tools and Applications</i>, Volume 67, Issue 3,
+        pp. 571-591, December 2013.
+        <ul>
+          <li>IF: 1.058 [2013] 
+        </ul> 
+    <li><b>Fu-Hau Hsu</b>, Min-Hao Wu, and Shiuh-Jeng Wang*, Chia-Ling Huang, 
+        ``<a href="http://link.springer.com/article/10.1007%2Fs11227-013-0896-9">Reversibility of Image with
+        balanced Fidelity and Capacity upon Pixels Differencing Expansion</a>,''
+        <i>Journal of Supercomputing</i>, Volume 66, Issue 2, pp. 812-828, November 2013 .
+        <ul>
+          <li>IF: 0.841 [2013] 
+          <li>NSC 101-2221-E-008-028-MY2
+        </ul> 
+    <li>Li-Han Chen*, <b>Fu-Hau Hsu</b>, Yanling Hwang, Mu-Chun Su, Wei-Shinn Ku, and Chi-Hsuan Chang, 
+        ``<a href="http://www.sciencedirect.com/science/article/pii/S0045790612001309">
+         ARMORY: An Automatic Security Testing Tool for Buffer Overflow Bug Detection</a>,''
+        <i>Computers & Electrical Engineering</i>, Volume 39, Issue 7, Pages 2233–2242, October 2013.
+        <ul>
+          <li>IF: 0.992 [2013]
+        </ul>
+    <li><b>Fu-Hau Hsu</b>*, Min-Hao Wu, Chang-Kuo Tso, Chi-Hsien Hsu, Chieh-Wen Chen,
+        ``<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6226454">Antivirus Software 
+        Shield against Antivirus Terminators</a>,'' <i>IEEE Transactions on Information Forensics and Security</i>, 
+        VOL. 7, NO.5, Pages 1439 - 1447, October 2012.
+        <!--<font color="red"><b>SCI</b></font>  (IF: 1.34 [2011])-->
+        <ul>
+          <li>IF:  1.895 [2012]
+          <li>NSC 100-2221-E-008-077-, NSC 100-2218-E-008-013-MY3, and NSC 101-2221-E-008-028-MY2
+        </ul>
+    <li>Jieh-Haur Chen*, Mu-Chun Su, Chang-Yi Chen, <b>Fu-Hau Hsu</b>, Chin-Chao Wu, 
+        ``<a href="http://www.sciencedirect.com/science/article/pii/S0926580511000380">
+          Application of Neural Networks for Detecting Erroneous Tax Reports from Construction
+        Companies </a>,'' <i>Automation in Construction</i>, Volume 20, Issue 7,
+        Pages 935-939, November 2011.
+        <ul>
+          <li>IF:  1.5 [2011]
+        </ul>
+    <li><b>Fu-Hau Hsu</b>*, Chang-Kuo Tso, Yi-Chun Yeh, Wei-Jen Wang, and Li-Han Chen,
+        `` <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5963164">BrowserGuard:  A
+        Behavior-based  Solution  to  Drive-by-Download Attacks</a>,''
+        <i>IEEE Journal on Selected Areas in Communications</i>, Volume 29, Issue:7, pages 1461 - 1468, 
+        August 2011. 
+        <!--<b><font color="red">SCI</font></b> (IF: 3.4 [2011]) (IF: 4.23 [2010] )-->
+        <ul>
+          <li>IF: 3.413 [2011]
+          <li>NSC 99-2220-E-008-001 and NSC 99-2219-E-008-001
+        </ul>
+    <!------------------------------------------------------------------------------------------>
+    <!-------------------------------------------------------------------------------------------
+    <li><b>Fu-Hau Hsu</b>*, Chang-Kuo Tso, Yi-Chun Yeh, Wei-Jen Wang, and Li-Han Chen,
+        `` <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5963164">BrowserGuard:
+        A  Behavior -based  Solution  to  Drive-by-Download Attacks</a>,''
+        <i>IEEE Journal on Selected Areas in Communications, Special Issue on Advances in Digital
+           Forensics for
+           Communications and Networking</i>, Volume 29, Issue:7, pages 1461 - 1468, August 2011. 
+           (NSC 99-2220-E-008-001 and NSC 99-2219-E-008-001) <b><font color="red">SCI</font></b>
+           (IF: 4.23 [2010])
+    -------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------> 
+    <li>Li-Han Chen, <b>Fu-Hau Hsu</b>*, Cheng-Hsien Huang, Chih-Wen Ou, Chia-Jun Lin, and Szu-Chi Liu, 
+        ``<a href="http://www.iis.sinica.edu.tw/page/jise/2011/201105_05.pdf">
+        A Robust Kernel-based Solution to Control-Hijacking Buffer Overflow Attacks</a>,'' 
+        <i>Journal of Information Science and Engineering</i>, Vol. 27, No. 3 ,  pp. 869-890, May, 2011. 
+        <!--<b><font color="red">SCI</font></b>  (IF: 0.175 [2011])-->
+        <ul>
+          <li>NSC 97-2218-E-008-006
+        </ul>
+    <li>Mu-Chun Su, Hsu-Hsun Lo, and <b>Fu-Hau Hsu</b>,
+        ``<a href="http://www.sciencedirect.com/science/article/pii/S0957417410003386">
+         A Neural Tree and Its Application to Spam E-mail Detection</a>,''
+        <i>Expert Systems with Applications</i>, Volume 37, Issue 12, pp. 7976-7985, December, 2010.
+        <!--<b><font color="red">SCI</font></b>-->
+        <ul>
+           <li> IF: 1.924 [2010]
+        </ul>
+     <li><b>Fu-Hau Hsu</b>, Cheng-Hsien Huang, Chi-Hsien Hsu, Chih-Wen Ou*, Li-Han Chen, and Ping-Cheng Chiu,
+        ``<a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6V0N-50KC6J2-1&_user=2489623&_coverDate=07%2F21%2F2010&_rdoc=1&_fmt=high&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000057545&_version=1&_urlVersion=0&_userid=2489623&md5=c00160bdee0c82a8e8281f70fce63d13">
+        HSP: A solution against heap sprays</a>,'' <i>Journal of Systems and Software</i>, Volume 83, Issue 11, November, 2010, Pages 2227-2236.
+        <!--<b><font color="red">SCI</font></b>--> 
+        <!------( IF: 1.34 [2010] 5-Year Impact Factor: 1.290 [2010])-----> 
+        <ul>
+          <li>IF: 1.277  [2010]
+          <li>NSC 99-2220-E-008-001 and NSC 98-2220-E-008-006 
+        </ul>
+   </ol>
+
+  <br> 
+  <li><h3><b>Non-SCI Journal</b></h3>
+   <ul>
+      <li><h3><b><font color="red">EI</font> Journal</b></h3>
+        <ol>
+           <li>Chun-Yi Wang, Chieh-Wei Huang, <b>Fu-Hau Hsu</b>, Shih-Jen Chen, and Yao-Hsin Chen,“Libra: An
+              Adaptive Method for Protecting Memory from Arbitrary Overwrite,'' <i>Journal of Computers</i>, accepted and to be published.
+           <li>Yu-Hsiang Hsueh, <b>Fu-Hau Hsu</b>, Shih-Jen Chen, Yao-Hsin Chen, Yan-Ling Hwang, 
+               Chuan-Sheng Wang, 
+               Yu-Liang Hsu*, ``<a href="http://www.ttp.net/978-3-03835-460-4/18.html">ET Detector:
+               A Client-based Solution to Detect an Evil Twin
+               Access Point</a>,'' <i>Applied Mechanics and Materials 
+               (Modern Design Technologies and Experiment for Advanced Manufacture and Industry)</i>, Vols. 764-765, pp 900-904, 2015.
+           <li>Wei-Ling Liao, Chih-Wen Ou*, Shih-Jen Chen, Yan-Ling Hwang, <b>Fu-Hau Hsu</b>, 
+               ``<a href="http://www.ttp.net/978-3-03835-460-4/19.html">Taurus: 
+               Preventing Stealthy SMS Activities on Android</a>,'' <i>Applied Mechanics and Materials 
+               (Modern Design Technologies and Experiment for Advanced Manufacture and Industry)</i>, Vols. 764-765, pp 960-964, 2015.
+           <li>Chuan-Sheng Wang*, <b>Fu-Hau Hsu</b>, Shih-Jen Chen, Yan-Ling Hwang and Min-Hao Wu, 
+                  ``<a href="http://www.scientific.net/AMM.479-480.916">Detecting Phishing Sites Using URLs Collected from Emails</a>,''
+           <i>Applied Mechanics and Materials (Applied Science and Precision Engineering Innovation)</i>, Vols. 479-480, pp 916-922, 2014. 
+           <li>Li-Han Chen*, <b>Fu-Hau Hsu</b>, Shih-Jen Chen, Chia-Jun Lin and Yan-Ling Hwang, 
+                 ``<a href="http://www.scientific.net/AMM.479-480.923">Serum System: An Automatic Curing System for Worms and Buffer Overflow-Based Botnets</a>,''
+           <i>Applied Mechanics and Materials (Applied Science and Precision Engineering Innovation)</i>, Vols. 479-480, pp 923-927, 2014.
+           <li>Ruei-Min Jiang, Jia-Sian Jhang, <b>Fu-Hau Hsu</b>*, YanLing Hwang, Peiwen Huang, Yung-Hoh Sheu, 
+                 ``<a href="http://www.scientific.net/AMM.284-287.3454">JokerBot
+                 - An Android-Based Botnet</a>,'' <i>Applied Mechanics and Materials (Innovation for
+                 Applied Science and Technology)</i>, Vols. 284-287, pp 3454-3458, 2013. 
+           <li>Chien-Wei Hung, <b>Fu-Hau Hsu</b>*, Shih-Jen Chen, Yan-Ling Hwang, Chang-Kuo Tso, Li-Pin Hsu,
+                 ``<a href="http://www.scientific.net/AMM.284-287.3385">Defend a System against Keyloggers with a Privilege-limited Account</a>,'' <i>Applied Mechanics and 
+                 Materials (Innovation for Applied Science and Technology)</i>, Vols. 284-287, pp 3385-3389,
+                 2013. 
+           <li>Chien-Hsing Chou*, Mu-Chun Su, Yu-Xiang Zhao, and <b>Fu-Hau Hsu</b>, 
+                 ``<a href="http://www2.tku.edu.tw/~tkjse/14-2/07-EE9902.pdf">A Reinforcement-Learning Approach to Color Quantization</a>,''
+                 <i>Tamkang Journal of Science and Engineering</i>, Vol. 14, No. 2, pp. 141-150,  June, 2011.
+        </ol><br>
+     <li><h3><b>Non-EI Journal</b></h3>
+        <ol>
+          <li>Mu-Chun Su, Shao-Jui Wang, Chen-Ko Huang, Pa-Chun Wang, and <b>Fu-Hau Hsu</b>,
+                "<a href="http://www.fujipress.jp/finder/xslt.php?mode=present&inputfile=JACII001400050011.xml">
+                A Signal-Representation-Based Parser to Extract Text-based Information from the Web</a>," 
+               <i>Journal of Advanced Computational Intelligence and Intelligent Informatics,
+               Special issue on Software Engineering for Web Intelligence</i>, Vol.14, No.5, pp. 531-539, July, 2010. 
+          <li>Hung-Yi Wu, <b>Fu-Hau Hsu</b>*, Hong-Wei Chen, Yu-Liang Hsu, and Chia-Jun Lin,
+                ``<a href="http://www.serialspublications.com/contentnormal.asp?jid=439&jtype=1">IP Spoofing Detector with High 
+                Precision</a>,'' <i> International Journal of Computer Science and Information Engineering</i>,
+                Volume 1, Number 1, Pages 71-81, June, 2010.
+       </ol>
+   </ul> 
+
+  <br> 
+  <li><h3><b>Domestic Journal</b></h3>
+   <ol>
+    <!---------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------- 
+    <li>Li-Han Chen, Shih-Jen Chen, Yi-chun Yeh, and <b>Fu-Hau Hsu</b>, ``Recent Network Attack Forms and Attacker
+        Activities,'' <i>Journal of Advanced Technology and Management Special Issue </i>, pp. 1-10, November, 2010.
+    ------------------------------------------------------------------------------------------------>
+    <!---------------------------------------------------------------------------------------------->
+    <li>Chang-Kuo Tso, Shih-Jen Chen, <b>Fu-Hau Hsu</b>*, ''A Browser-side Solution
+        to Drive-by-Download-Based 
+        Malicious Web Pages,'' <i>Communications of the CCISA</i>, Vol. 15, No. 4, pp. 70-79, Oct., 2009. 
+    <li>Chung-Li Lin, Li-Han Chen, Cheng-Hsien Huang, Chih-Wen Ou, <b>Fu-Hau Hsu</b>*, ``A Novel Method of 
+        Detecting Buffer Overflow Attacks,'' <i>Communications of the CCISA</i>, Vol. 14, No. 2, pp. 99-111,
+        April, 2008. 
+    <!------------------------------------------------------------------------------------------>
+    <!-------------------------------------------------------------------------------------------
+    <li><font face="標楷體">左昌國, 陳世仁, <b>許富皓</b></font>,
+        ''<font face="標楷體">一種在瀏覽器端偵測並阻擋網頁惡意程式的解決方案</font>,
+     ''<font face="標楷體"><i>資訊安全通訊</i></font>, Vol. 15, No. 4, pp. 70-79, Oct., 2009. 
+    <li><font face="標楷體">林忠立, 陳立函, 黃政憲, 歐智文, <b>許富皓</b></font>,
+        ``A Novel Method of Detecting Buffer Overflow Attacks,'' 
+        <font face="標楷體"><i>資訊安全通訊</i></font>, Vol. 14, No. 2, pp. 99-111, April, 2008.
+    -------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------>
+   </ol>
+  <br>
+  <li><h3><b>International Conference</b></h3> 
+   <ol>
+   <li>Chun-Yi Wang*, Ya-Lyue Jhao, Shih-Jen Chen, Chuan-Sheng Wang, <b>Fu-Hau Hsu</b>, and Yao-Hsin Chen,
+       ``The Bilateral Communication based Dynamic Extensible Honeypot,'' <a href="http://iccst2015.org/"><i>The 49th IEEE Annual International        Carnahan Conference on Security Technology (ICCST 2015)</i></a>, 
+       Taipei, Taiwan R.O.C., September 21-24, 2015.
+   <li>Chia-Hao Lee*, Yan-Ling Hwang, Shih-Jen Chen, Chih-Wen Ou, <b>Fu-Hau Hsu</b>, Yu-Liang Hsu, ``CIDP Treatment: An Innovative Mobile Botnet Covert
+       Channel based on Caller IDs with P8 Treatment,'' <i><a href="http://imeti.org/index.html">International Multi-Conference on Engineering
+       and Technology Inovation</i></a>, Kaohisung,Taiwan, R.O.C., Oct. 30 ~ Nov. 3, 2015.
+   <li>Yanling Hwang*, Peiwen Huang, and <b>Fu-Hau Hsu</b>, ``The Implementation of Alternative Assessments on College Students English Learning,'' 
+       <i><a href="http://iafor.org/conferences/ecll2015/">The Third European Conference on Language Learning (ECLL2015)</a></i>, 
+       Brighton, East Sussex, United Kingdom, July 1 ~ July 5, 2015.
+   <li>Chia-Heng Li, <b>Fu-Hau Hsu</b>, Chuan-Sheng Wang*, Shih-Jen Chen, Yao-Hsin Chen, and Yan-Ling Hwang,
+       ``Hawkeye
+       : Finding Spamming Accounts,'' <i>The 16th Asia-Pacific Network Operations and Management Symposium</i>, 
+       National Chiao Tung University, Taiwan R.O.C., September 17-19, 2014.
+   <li>Tien-Hao Tsai, Yu-Sheng Su, Shih-Jen Chen, Yan-Ling Hwang, <b>Fu-Hau Hsu</b>*, and Min-Hao Wu,
+       ``A Network-based Solution to Kaminsky DNS Cache Poisoning Attacks,'' <i>The Fifth 
+       International Conference on Evolving Internet (INTERNET 2013)</i>, Nice, France,
+       July 21 - 26, 2013. <font color="red">(Acceptance Ratio: 26%)</font> 
+   <li><b>Fu-Hau Hsu</b>, Min-Hao Wu, and Shiuh-Jeng Wang*, 
+       ``Dual-watermarking by QR-code Applications in Image Processing,'' <i>The 9th IEEE International
+       Conference on Ubiquitous Intelligence and Computing</i> (UIC 2012), Fukuoka, Japan, Sep. 4 - 7, 2012.
+   <li>Chien-Wei Hung, <b>Fu-Hau Hsu</b>*, Shih-Jen Chen, Chang-Kuo Tso, Yan-Ling Hwang, Po-Ching Lin, and
+       Li-Pin Hsu 
+         ''A QTE-based Solution to Keylogger Attacks,'' <i>The Sixth International Conference on Emerging
+         Security Information, Systems and Technologies</i> (SECURWARE 2012),  
+         Rome, Italy, August 19 - 24, 2012. (<a href="http://www.csie.ncu.edu.tw/~hsufh/PUBLICATION/2012/QTE.ppt">ppt</a>)
+          (<a href="http://www.csie.ncu.edu.tw/~hsufh/PUBLICATION/2012/QTE.pptx">pptx</a>)
+         <font color="red">(Acceptance Ratio: 27%)</font>.
+   <li>Kai-Xiang Zhang, Chia-Jun Lin, Shih-Jen Chen, Yanling Hwang, Hao-Lun Huang, and <b>Fu-Hau Hsu</b>,
+         ``TransSQL: A Translation and Validation-based Solution for SQL-Injection Attacks,'' In 
+         <i>Proceedings of the First International Conference on
+         Robot, Vision and Signal Processing</i>, Kaohsiung, Taiwan, November 21-23, 2011.
+         <b><font        color="red">EI</font></b>
+   <li>Min-Hao Wu, <b>Fu-Hau Hsu</b>, Cheng-Hsing Yang, and Shiuh-Jeng Wang, 
+       ``Reversible Watermarking Scheme with Visibility Using Randomize Distance,''
+       In <i>Proceedings of the fifth International Conference on Genetic and Evolutionary Computing</i>,
+       Kinmen, Taiwan, August 29 ~ August 30, 2011, Xiamen, China, August 31 ~ September 1, 2011. 
+       <b><font color="red">EI</font></b> 
+   <li>Yanling Hwang, Peiwen Huang, Shih-Jen Chen, <b>Fu-Hau Hsu</b>, ``The Perceptions of Cooperative Learning in Computer-Assisted Language Learning Environmnets,'' <i>The Global Chinese Conference on 
+       Computers in Education</i> (GCCCE), Hangzhou, China, May, 29-31, 2011. 
+       <b><font color="red">EI</font></b>
+   <li>Chen-Hsing Yang, <b>Fu-Hau Hsu</b>, Min-Hao Wu, and Shiuh-Jeng Wang,
+        ``<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5715520">Improving
+        Histogram-based Reversible Data Hiding By Tictactoemidlet Predictions</a>,''
+        In <i>Proceedings of the fourth International Conference on Genetic and Evolutionary Computing</i>,
+        Dec. 13-15, 2010, Shenzhen, China. <b><font color="red">EI</font></b>
+   <!--------------------------------------------------------------------------------->
+   <!----------------------------------------------------------------------------------
+   <li>Fu-Hau Hsu, Tzi-cker Chiueh, Jiawu Chen, and Ashish Raniwala, 
+       ``A Network Defense Platform Based on Transparent TCP Proxying,``to be published.
+   ----------------------------------------------------------------------------------->
+   <!--------------------------------------------------------------------------------->
+   <li>Wei-Jen Wang, Carlos Varela, <b>Fu-Hau Hsu</b>, and Cheng-Hsien Tang, 
+       "<a href="http://wcl.cs.rpi.edu/papers/GPC10-1569275509.pdf">Actor
+       Garbage Collection Using Vertex-Preserving Actor-to-Object Graph Transformations</a>",
+       <i>Lecture Notes in Computer Science</i>,
+       6104 Springer, 2010, ISBN 978-3-642-13066-3. <b><font color="red">EI</font></b> 
+   <li>
+        <b>Fu-Hau Hsu</b>, Fanglu Guo, and Tzi-cker Chiueh,`` 
+        <a href = "http://www.ecsl.cs.sunysb.edu/tr/TR206.pdf" target = "_blank">Scalable Network-based Buffer Overflow Attack Detection</a>,``
+        in <i>Proceedings of ACM/IEEE Symposium on Architectures for Networking and
+        Communications Systems (ANCS 2006)</i>,
+        San Jose, California, USA, December 4-5, 
+        2006. <a href = "http://www.ecsl.cs.sunysb.edu/tr/ANCS2006_HSU.ppt" target = "_blank">(ppt)</a>
+        <font color="red">(Acceptance Ratio: 19.6% = 19/97)</font>. <b><font color="red">EI</font></b>
+   <li>
+        <b>Fu-Hau Hsu</b> and Tzi-cker Chiueh, 
+        ``<a href = "http://www.ecsl.cs.sunysb.edu/tr/TR158.pdf" target = "_blank">CTCP:
+        A Transparent Centralized TCP/IP Architecture
+        for Network Security</a>,`` in <i>Proceedings of Annual Computer Security Application Conference
+        (ACSAC 2004)</i>, Tucson, Arizona, 
+        USA, Dec. 6-10, 2004. <font color="red">(Acceptance Ratio: 26%=35/134)</font>. <b><font color="red">EI</font></b>
+   <li>
+        <b>Fu-Hau Hsu</b> and Tzi-cker Chiueh,
+        ``<a href = "http://www.ecsl.cs.sunysb.edu/tr/TR110.pdf" target = "_blank">A Path
+        Information Caching and Aggregation Approach to Traffic Source Identification</a>,`` 
+        in <i>Proceedings of the 23rd IEEE International Conference on Distributed 
+        Computing Systems (ICDCS 2003)</i>, Providence, Rhode Island, USA, May 19-22, 2003.
+        <font color="red">(Acceptance Ratio: 17.7% = 72/406)</font>. <b><font color="red">EI</font></b>
+   <li>
+        T.-C. Chiueh, K. Gopalan, A. Neogi, C. Li, S. Sharma, S.-M. Shan, J. Chen,
+        W. Li, N. Joukov, J. Zhang, <b>F.-H. Hsu</b>, F. Guo, and S.-I. Doong, ``Sago: A
+        Network Resource Management System for Real-Time Content Distribution,''
+        in <i>Proceedngs of International Conference on Parallel and Distributed Systems (ICPADS 2002)</i>,
+        National Central University, Taiwan, ROC, Dec., 2002.
+   <li>
+        Tzi-Cker Chiueh and <b>Fu-Hau Hsu</b>,``
+        <a href = "http://www.ecsl.cs.sunysb.edu/tr/TR96.pdf" target = "_blank">RAD:
+        A Compile-time Solution to Buffer Overflow Attacks,</a>`` 
+        in <i>Proceedings of the 21st IEEE International Conference on Distributed Computing Systems
+        (ICDCS 2001)</i>, Phoenix, Arizona, USA, April 16-19, 2001. 
+        <b><font color="red">Google Scholar Citation: 256</font></b>
+   </ol>
+  <br> 
+  <li><h3><b>Domestic Conference</b></h3>
+   <ol>
+    <li>Syun-Cheng Ou, <b>Fu-Hau Hsu</b>, Shih-Jen Chen, Yu-Sheng Su, Min-Hao Wu, ``STEALTH: A Method of Hiding and Encrypting Files in NTFS,'' National Computer Symposium , 
+          TaiChung, Taiwan, R.O.C., 13 ~ 14, Dec., 2013.
+    <li><font face="標楷體"><b>許富皓</b>, 陳立函, 張嘉顯, 江瑞敏, 凌宗廷, 左昌國, 許齊顯</font>, ``<font face="標楷體">傀儡網佈建技術研究</font>,'' 
+          <font face="標楷體">102年度屆國防科技學術研討會, 桃園</font>, 14th, Nov., 2013.
+    <li><font face="標楷體">廖緯玲, 陳世仁, 蘇育生, 許富皓, 吳敏豪</font>, 
+        ``Watch Your Money：A Solution to Protect Your Android from Sending Unknown SMS Messages,''
+        Taiwan Academic Network Conference (TANET), Tai-Chung, Taiwan, 23rd ~ 25th Oct. 2013. 
+    <li>Jhen-Li Wang, Shih-Jen Chen, Chia-Hao Lee, and <b>Fu-Hau Hsu</b>,
+        ``A Server-Side Solution for HTTP Cookie-Stealing-Based XSS Attacks,''
+        In <i>proceedings of 2010 International Security Technology and Management Conference</i>, Taipei, Taiwan, September, 8, 2010.
+    <li>Chuan Sheng Wang, Shih-Jen Chen, and <b>Fu-Hau Hsu</b>, ``Phishing Detection from Spam Mails,''
+        In <i>proceedings of 2010 International Security Technology and Management Conference</i>, Taipei, Taiwan, September, 8, 2010.
+    <li><font face="標楷體">趙禧綠, 趙梨華, <b>許富皓</b>, 顏志豪, 蔡天浩</font>,
+        ``<font face="標楷體">Windows誘捕網情蒐之核心技術與回追技術軟體發展</font>,''
+        <font face="標楷體">第18屆國防科技學術研討會, 桃園, 八德</font>, 27th, Dec., 2009.
+   </ol>
+  <br> 
+  <li><h3><b>Technical Report</b></h3>
+   <ul>
+    <li>
+        <b>Fu-Hau Hsu</b>, ``<a href = "http://www.ecsl.cs.sunysb.edu/tr/TR163.pdf" target = "_blank">Sky-walker:
+        An Integrated Solution for Network and Computer Security</a>,`` 
+        Ph.D. Dissertation, SUNY at Stony Brook, Dec., 2004.
+    <li>
+        <b>Fu-Hau Hsu</b>, ``<a href = "http://www.ecsl.cs.sunysb.edu/tr/TR87.ps" target = "_blank">The Principle,
+        Attack Patterns, and Defense Methods of Buffer Overflow Attacks</a>,`` RPE report, SUNY at Stony Brook, October, 2000.
+    <!------------------------------------------------------------------------------------------>
+    <!-------------------------------------------------------------------------------------------
+    <li> 
+      <b>Fu-Hau Hsu</b>, ``<a href = "http://www.ecsl.cs.sunysb.edu/tr/mp10.ps.Z" target = "_blank">A Dictionary Server
+      for WWW Browser</a>,`` Master Project Report, SUNY at Stony Brook, NY 11794-4400, November, 1998.
+    -------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------>
+   </ul>
+ </ul>  
+    </div>
+</div>
+<div id="Presentation" class="page">
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Presentation</h1>
+            <HR></HR>
+            <br>
+        </div>
+        <div id="presentinfo" class="col-md-10 col-md-offset-1">
+        </div>
+        <div id="presentlogin" class="col-md-1">
+                    </div>
+    </div>
+
+    <nav id="seasonbar" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#seasonmenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                                
+                <div class="collapse navbar-collapse" id="seasonmenu">
+
+                    <ul id="seasonmenuA" class="nav navbar-nav season">
+                        <li><a onclick=showSeason(30) href="#Presentation">2016 Spring</a></li>
+                        <li><a onclick=showSeason(29) href="#Presentation">2015 Fall</a></li>
+                        <li><a onclick=showSeason(28) href="#Presentation">2015 Spring</a></li>
+                        <li><a onclick=showSeason(27) href="#Presentation">2014 Fall</a></li>
+                        <li><a onclick=showSeason(26) href="#Presentation">2014 Summer</a></li>
+                        <li><a onclick=showSeason(25) href="#Presentation">2014 Spring</a></li>
+                        <li><a onclick=showSeason(23) href="#Presentation">2013 Fall</a></li>
+                        <li><a onclick=showSeason(22) href="#Presentation">2013 Summer</a></li>
+                        <li><a onclick=showSeason(21) href="#Presentation">2013 Spring</a></li>
+                        <li><a onclick=Nextlist("#seasonmenuB") href="#Presentation"><b>Next</b></a></li>
+                    </ul>
+                    <ul id="seasonmenuB" class="nav navbar-nav season" style="display:none">
+                        <li><a onclick=Nextlist("#seasonmenuA") href="#Presentation"><b>Prev</b></a></li>
+                        <li><a onclick=showSeason(20) href="#Presentation">2012 Fall</a></li>
+                        <li><a onclick=showSeason(19) href="#Presentation">2012 Summer</a></li>
+                        <li><a onclick=showSeason(18) href="#Presentation">2012 Spring</a></li>
+                        <li><a onclick=showSeason(17) href="#Presentation">2011 Fall</a></li>
+                        <li><a onclick=showSeason(16) href="#Presentation">2011 Summer</a></li>
+                        <li><a onclick=showSeason(15) href="#Presentation">2011 Spring</a></li>
+                        <li><a onclick=showSeason(13) href="#Presentation">2010 Fall</a></li>
+                        <li><a onclick=showSeason(11) href="#Presentation">2010 Summer</a></li>
+                        <li><a onclick=Nextlist("#seasonmenuC") href="#Presentation"><b>Next</b></a></li>
+
+                    </ul>
+                    <ul id="seasonmenuC" class="nav navbar-nav season" style="display:none">
+                        <li><a onclick=Nextlist("#seasonmenuB") href="#Presentation"><b>Prev</b></a>
+                        </li>
+                        <li><a onclick=showSeason(10) href="#Presentation">2010 Spring</a></li>
+                        <li><a onclick=showSeason(9) href="#Presentation">2009 Fall</a></li>
+                        <li><a onclick=showSeason(8) href="#Presentation">2009 Spring</a></li>
+                        <li><a onclick=showSeason(7) href="#Presentation">2008 Fall</a></li>
+                        <li><a onclick=showSeason(6) href="#Presentation">2008 Sumner</a></li>
+                        <li><a onclick=showSeason(5) href="#Presentation">2008 Spring</a></li>
+                        <li><a onclick=showSeason(4) href="#Presentation">2007 Fall</a></li>
+                        <li><a onclick=Nextlist("#seasonmenuD") href="#Presentation"><b>Next</b></a></li>
+                    </ul>
+                    <ul id="seasonmenuD" class="nav navbar-nav season" style="display:none">
+                        <li><a onclick=Nextlist("#seasonmenuC") href="#"><b>Prev</b></a></li>
+                        <li><a onclick=showSeason(3) href="#Presentation">2007 Summer</a></li>
+                        <li><a onclick=showSeason(2) href="#Presentation">2007 Spring</a></li>
+                        <li><a onclick=showSeason(1) href="#Presentation">2006 Fall</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div id="Alumni" class="page">
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Alumni</h1>
+            <HR></HR>
+        </div>
+        <div id="aluinfo" class="col-md-10 col-md-offset-1">
+
+        </div>
+    </div>
+</div>
+<div id="Students" class="page">
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Students</h1>
+            <HR></HR>
+            <br>
+        </div>
+        <div id="stuinfo" class="col-md-10 col-md-offset-1">
+
+        </div>
+    </div>
+</div>
+
+
+<div id="LTG" class="page">
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Lab Tour Guide</h1>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <iframe width="640" height="480" src="//www.youtube.com/embed/d4pj7iz7ak0" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

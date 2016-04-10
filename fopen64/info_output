@@ -1,0 +1,7 @@
+==========
+I am in fopen64 function
+FILE *fopen64(const char *path, const char *mode)
+
+path: index.html
+mode: wb
+==========
