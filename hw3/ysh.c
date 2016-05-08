@@ -454,7 +454,6 @@ return 1;
 }
 
 int manageEnviron(char * args[], int option){
-	char **env_aux;
 	switch(option){
 		// Case 'setenv': we set an environment variable to a value
 		case 1:
