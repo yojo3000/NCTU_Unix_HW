@@ -1,0 +1,11 @@
+this shell is called ysh
+ 
+it implement:
+ 
+[basic]
+     all basic requirement in homework website
+ 
+[optional]
+     export env_name env_value
+     unset env_name
+
