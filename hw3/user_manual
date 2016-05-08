@@ -1,0 +1,11 @@
+this shell is called ysh
+
+it implement
+1. pipe (|)
+2. redirect (<, >)
+3. export env_name env_value
+4. unset env_name
+5. binary files in /bin, /usr/bin (usual command like cat, ping)
+6. cd, clear
+7. interupt signal handle (ctrl+c)
+
