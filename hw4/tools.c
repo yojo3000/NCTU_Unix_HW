@@ -145,6 +145,7 @@ void folder_error_response(int client_socket_fd, int error_type)
 
 void folder_end_not_slash(int client_socket_fd, char* folder_path)
 {
+  printf("301301301301301301301301\n");
   char buffer[1024];
   sprintf(buffer, "HTTP/1.1 301 Moved Permanently\r\nLocation: %s\r\n\r\n", folder_path);
   send(client_socket_fd, buffer, strlen(buffer), 0);

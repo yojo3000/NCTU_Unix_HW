@@ -22,7 +22,7 @@ struct {
 } extension_list [] = {
   {"mp4", "application/octet-stream"},
   {"mp3", "application/octet-stream"},
-	{"ogg", "application/octet-stream"},
+//	{"ogg", "audio/ogg"},
   {"jpg", "image/jpeg"},
   {"jpeg","image/jpeg"},
   {"png", "image/png" },
@@ -115,8 +115,6 @@ int main(int argc, const char * argv[]) {
                     read_buffer[read_buffer_size] = 0;
                     printf("read return: %ld\n", read_return);
 
-                    //printf("read buffer:\n%s\n", read_buffer);
-
 /**************************************************************************************/
 										/*
 											0123456
@@ -144,7 +142,7 @@ int main(int argc, const char * argv[]) {
 											012345678
 										*/
 										printf("blank index: %d\n", blank_index);
-                    char folder_file_origin[30];
+                    char folder_file_origin[1024];
                     memset(folder_file_origin, 0, strlen(folder_file_origin));
 
 										if(read_buffer[5] !=' '){
@@ -153,7 +151,7 @@ int main(int argc, const char * argv[]) {
 										{
 											strcpy(folder_file_origin, "/");
 										}
-                    // get_substring(&folder_file, read_buffer, 5, blank_index);
+										
                     printf("folder file origin:%s, len: %d\n", folder_file_origin, strlen(folder_file_origin));
 
 										//=======================
@@ -166,7 +164,7 @@ int main(int argc, const char * argv[]) {
                     {
                       if(folder_file_origin[q_index] == '?')
                       {
-                        strncpy(folder_file, folder_file_origin, q_index);
+                        strcpy(folder_file, get_substring2(folder_file_origin, 0, q_index));
                         break;
                       }
                     }
@@ -193,7 +191,7 @@ int main(int argc, const char * argv[]) {
                       if(strcmp(last_char, "/") != 0)
                       {
                         // last char is not "/"
-
+												printf("last is not slash (/)\n");
                         strcat(folder_file_temp, "/"); // add "/" at the end
                         folder_end_not_slash(client_socket_fd, folder_file_temp);
                       }else
