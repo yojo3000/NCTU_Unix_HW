@@ -151,7 +151,7 @@ int main(int argc, const char * argv[]) {
 										{
 											strcpy(folder_file_origin, "/");
 										}
-										
+
                     printf("folder file origin:%s, len: %d\n", folder_file_origin, strlen(folder_file_origin));
 
 										//=======================
@@ -188,6 +188,7 @@ int main(int argc, const char * argv[]) {
 
                       char folder_file_temp[1024];
                       strcpy(folder_file_temp, folder_file);
+
                       if(strcmp(last_char, "/") != 0)
                       {
                         // last char is not "/"

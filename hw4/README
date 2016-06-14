@@ -1,0 +1,11 @@
+simple webserver with basic function
+
+just type "make" in the Makefile folder
+
+Usage of binary:
+
+./Webserver "port" "document root"
+
+document can be a restrict or relative path
+
+no cgi support
