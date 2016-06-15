@@ -89,7 +89,7 @@ int main(int argc, const char * argv[]) {
             // in child
             int read_buffer_size = 4096;
             char read_buffer[read_buffer_size]; // store data that read from client fd
-
+						memset(read_buffer, 0, strlen(read_buffer));
             long read_return = read(client_socket_fd, read_buffer, read_buffer_size); // read from client fd
             perror("read");
 
@@ -114,7 +114,7 @@ int main(int argc, const char * argv[]) {
 
                     read_buffer[read_buffer_size] = 0;
                     printf("read return: %ld\n", read_return);
-
+										printf("read_buffer::\n\n%s\n", read_buffer);
 /**************************************************************************************/
 										/*
 											0123456
@@ -351,8 +351,6 @@ int main(int argc, const char * argv[]) {
 
                         }
                     }
-                    printf("\n%s\n", read_buffer);
-
                 }
             }
         }close(client_socket_fd);

@@ -46,14 +46,23 @@ char* get_folder_file_restrict_path(char* folder_file)
 int is_directory(char* restrict_path)
 {
   struct stat statbuf;
-  lstat(restrict_path, &statbuf);
 
-  if (S_ISDIR(statbuf.st_mode)){
-    return 1;
-  }
-  else{
+  if(stat(restrict_path, &statbuf) == 0)
+  {
+    if (S_ISDIR(statbuf.st_mode)){
+      return 1;
+    }
+    else{
+      return 0;
+    }
+  }else
+  {
+    //
     return 0;
   }
+  //printf("rrrrrrr: %s\n", restrict_path);
+
+
 }
 
 void send_header(int client_socket_fd, char* content_type)
@@ -145,7 +154,7 @@ void folder_error_response(int client_socket_fd, int error_type)
 
 void folder_end_not_slash(int client_socket_fd, char* folder_path)
 {
-  printf("301301301301301301301301\n");
+  printf("3013013013013013013013\n");
   char buffer[1024];
   sprintf(buffer, "HTTP/1.1 301 Moved Permanently\r\nLocation: %s\r\n\r\n", folder_path);
   send(client_socket_fd, buffer, strlen(buffer), 0);
